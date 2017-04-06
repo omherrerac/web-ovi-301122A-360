@@ -1,5 +1,0 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Libre+Franklin');
-</style>
-
-font-family: 'Libre Franklin', sans-serif;
