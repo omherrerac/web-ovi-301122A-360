@@ -5,10 +5,6 @@
   Fase de Construcción e Implantación
 
 # Integrantes del proyecto
-  - MAURICIO GOMEZ
-  - JUAN FERNANDO AVILES
-  - CARLOS EDUARDO GALIANO
-  - JOSE LUIS GOMEZ
   - OSCAR MAURICIO HERRERA
 
 # Tutor
