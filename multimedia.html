@@ -44,7 +44,7 @@
 	    				<nav class="navbar navbar-default">
 		    				<div class="container-fluid">
 		    					<div class="logo">
-				  					<a href="./"><img src="assets/images/general/unad.png" alt="Unad Universidad Nacional Abierta y a Distancia"></a>
+				  					<a href="index.html"><img src="assets/images/general/unad.png" alt="Unad Universidad Nacional Abierta y a Distancia"></a>
 				  				</div>
 
 		    				    <!-- Brand and toggle get grouped for better mobile display -->
@@ -92,12 +92,12 @@
   				<!-- slider -->
   				<div class="col-md-12 sliderHome">
   					<div id="sliderHome">
-  					    <a href="manejo-basico-del-entorno.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner1.jpg');"></div></a>
-  					    <a href="conocimiento-general-de-git.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner2.jpg');"></div></a>
-  					    <a href="herramientas-html5-y-css3.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner3.jpg');"></div></a>
-  					    <a href="desarrollo-web.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner4.jpg');"></div></a>
-  					    <a href="sitios-de-interes.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner5.jpg');"></div></a>
-  					    <a href="multimedia.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner6.jpg');"></div></a>
+  					    <a href="manejo-basico-del-entorno.html" title="Manejo básico del entorno GIT"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner1.jpg');"></div></a>
+  					    <a href="conocimiento-general-de-git.html" title="Conocimiento general de GIT"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner2.jpg');"></div></a>
+  					    <a href="herramientas-html5-y-css3.html" title="Herramientas HTML5 y CSS3"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner3.jpg');"></div></a>
+  					    <a href="desarrollo-web.html" title="Desarrollo web"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner4.jpg');"></div></a>
+  					    <a href="sitios-de-interes.html" title="Sitios de interés"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner5.jpg');"></div></a>
+  					    <a href="multimedia.html" title="Multimedia"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner6.jpg');"></div></a>
 	  				</div>
   				</div>
   			</div>
@@ -111,7 +111,9 @@
 			  			<h1>Multimedia</h1>
 			  			<br/>
 			  			<span>
-			  				
+			  				<p>Etiquetas multimedia html</p>
+			  				<br/><br/>
+			  				Mediante una serie de etiquetas podemos introducir sonido y video en nuestras páginas. estas etiquetas llevan una serie de atributos para indicar el archivo y las características que queremos incorporar.
 			  			</span>
 			  		</div>
 
@@ -123,6 +125,64 @@
 	  		</div>
 	  	</div>
 	  	<br/><br/>
+
+	  	<!-- extra text -->
+	  	<div class="container text-extra">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<span>
+						<strong>Etiqueta bgsound</strong>
+						<br/><br/>
+						La etiqueta bgsound sirve para insertar sonido de fondo en las páginas web. Su principal inconveniente es que sólo funciona con Internet Explorer, por lo que su uso es muy limitado. De todas maneras vamos a ver cuál es su forma y sus principales atributos:
+						<bgsound src="ruta_fichero" loop="numero" balance="b" volume="v"></bgsound>
+						Los valores de los atributos son los siguientes:
+						src="ruta_fichero" : Indica la ruta donde está el archivo de sonido.
+						loop="numero" : indica el número de veces que debe repetirse el fichero. si en lugar de un número escribimos el valor "infinite" el fichero se reproducirá indefinidamente.
+						balance="b" : indica el balance del sonido entre los dos altavoces, es decir, la potencia con que se oirá en cada uno de ellos (derecho e izquierdo). Sus valores pueden estar entre -10,000 y +10,000; siendo el valor 0 un balance equilibrado entre los dos altavoces.
+						volume="v" : indica el volumen al que se oirá el sonido, sus valores pueden variar entre -10,000 (mínimo) y 0 (máximo).
+						Como ya se ha dicho esta etiqueta suele ser muy poco usada ya que tiene las limitaciones de que sólo funciona con Internet Explorer, y además el usuario no puede controlar el sonido desde la página.
+						<br/><br/>
+						<strong>Etiqueta img</strong>
+						<br/><br/>
+						La etiqueta 'img' que se usa normalmente para insertar imágenes también puede servir para insertar videos, sin embargo tiene sus limitaciones ya que sólo funciona con Internet Explorer y no con todos los tipos de archivo. De hecho sólo funciona con videos con extensión .avi, .mov, y .mpg. los atributos específicos para utilizar esta etiqueta para video son los siguientes:
+						dynsrc="ruta_fichero" : Es el atributo usado para localizar el archivo de video que se quiere visualizar.
+						loop="n" : Toma como valor un número entero que indica el número de veces que se reproducirá el video. Si ponemos un valor =-1 el video se reproducirá infinitas veces.
+						start="fileopen/mouseover" : el valor fileopen es el valor por defecto e indica que el video empieza a reproducirse al acabar de cargarse la página. El valor mouseover indica que el video no empezará a reproducirse hasta que el usuario ponga el puntero del ratón encima de él.
+						Por lo demás se usan los mismos atributos de la etiqueta img es decir, height y with para el alto y el ancho de la consola, hspace y vspace para los márgenes de la consola. y también podemos usar la etiqueta src="ruta_imagen" para mostrar una imagen en el caso de que el navegador no pueda cargar el video.
+						Como ya se ha dicho el principal inconveniente de esta etiqueta es que sólo funciona el video en Internet Explorer, por lo que no es muy utilizada para este fin.
+						<br/><br/>
+						<strong>Etiqueta embed</strong>
+						<br/><br/>
+						La etiqueta embed sirve tanto para incrustar archivos de audio como de video en la página web. Esta etiqueta posee varios atributos, que pueden ser distintos en función del objeto que vayamos a mostrar en la pagina. su sintaxis general sería la siguiente.
+						'embed src="..." ...(atributos) ...>embed'
+						la etiqueta de cierre final es conveniente ponerla para que funcione correctamente, también podemos poner una barra inclinada al final de la etiqueta principal que sustituye a la etiqueta de cierre ('embed ... ''), en todo caso nunca debemos dejar la etiqueta sin cerrar. A continuación vamos a ver cuales son los principales atributos de esta etiqueta y sus valores.
+						atributos referentes a vídeo y sonido
+						src="ruta_fichero"
+						Indica la ruta para acceder al archivo multimedia que queremos abrir.
+						loop="numero/true/false"
+						Define el número de veces que se reproducirá el fichero, como valor podemos poner un numero entero, o las palabras true (infinitas veces) o false (sólo una vez). Este atributo no funciona con todos los navegadores, especialmente con Internet Explorer en versiones antiguas. por lo que debemos complementarlo con el siguiente.
+						playcount="n"
+						Define el número de veces que se reproducirá el fichero en Internet Explorer.
+						autostart="true/false"
+						Define si el fichero debe empezar a reproducirse por si solo a la vez que la página (valor true), o debe necesitar la intervencion del usuario mediante la consola o código javascript para reproducirse (valor false).Tanto este atributo como los dos anteriores no funcionan con los archivos flash de video (extensión .swf), los cuales se muestran siempre al cargar la página y en número infinito de veces.
+						type="tipo_fichero"
+						Atributo importante que declara qué tipo de fichero estamos usando. El navegador buscará el plugin o programa necesario para abrirlo, teniendo preferencia el que hayamos indicado. dependiendo del tipo de fichero puede tomar distintos valores. los más habituales son:
+						type="audio/wav" : para archivos de audio con extensión .wav.
+						type="audio/midi" : para archivos de audio con extensión .mid.
+						type="application/mpeg" : para archivos de audio o de vídeo del tipo mpeg. Archivos con extensiones .mp3 .mpg. .mpeg .mp4. También puede usarse con videos con extensión .avi, ya que también lo reproduce, y a veces el usuario no tiene instalado el plugin para videos avi. También podemos usar los valores type="audio/mpeg" o type="video/mpeg" según sea el archivo de audio o de video.
+						type="application/mov" : para archivos de video con extensión .mov.
+						type="application/wmv" : para archivos de video con extensión .wmv.
+						type="application/x-shockwave-flash" : para archivos flash de video con extensión .swf.
+					</span>
+					<br/><br/>
+
+					<h5>Extraido de: http://aprende-web.net/html/html10_2.php</h5>
+				</div>
+			</div>
+	  	</div>
+	  	<br/><br/><br/>
+
 
 	  	<!-- pre-footer -->
   		<div class="container-full preFooter">

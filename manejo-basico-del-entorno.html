@@ -44,7 +44,7 @@
 	    				<nav class="navbar navbar-default">
 		    				<div class="container-fluid">
 		    					<div class="logo">
-				  					<a href="./"><img src="assets/images/general/unad.png" alt="Unad Universidad Nacional Abierta y a Distancia"></a>
+				  					<a href="index.html"><img src="assets/images/general/unad.png" alt="Unad Universidad Nacional Abierta y a Distancia"></a>
 				  				</div>
 
 		    				    <!-- Brand and toggle get grouped for better mobile display -->
@@ -92,12 +92,12 @@
   				<!-- slider -->
   				<div class="col-md-12 sliderHome">
   					<div id="sliderHome">
-  					    <a href="manejo-basico-del-entorno.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner1.jpg');"></div></a>
-  					    <a href="conocimiento-general-de-git.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner2.jpg');"></div></a>
-  					    <a href="herramientas-html5-y-css3.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner3.jpg');"></div></a>
-  					    <a href="desarrollo-web.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner4.jpg');"></div></a>
-  					    <a href="sitios-de-interes.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner5.jpg');"></div></a>
-  					    <a href="multimedia.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner6.jpg');"></div></a>
+  					    <a href="manejo-basico-del-entorno.html" title="Manejo básico del entorno GIT"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner1.jpg');"></div></a>
+  					    <a href="conocimiento-general-de-git.html" title="Conocimiento general de GIT"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner2.jpg');"></div></a>
+  					    <a href="herramientas-html5-y-css3.html" title="Herramientas HTML5 y CSS3"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner3.jpg');"></div></a>
+  					    <a href="desarrollo-web.html" title="Desarrollo web"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner4.jpg');"></div></a>
+  					    <a href="sitios-de-interes.html" title="Sitios de interés"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner5.jpg');"></div></a>
+  					    <a href="multimedia.html" title="Multimedia"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner6.jpg');"></div></a>
 	  				</div>
   				</div>
   			</div>
@@ -111,7 +111,10 @@
 			  			<h1>Manejo básico del entorno</h1>
 			  			<br/>
 			  			<span>
-			  				
+			  				<p><strong>Empezando - Configurando Git por primera vez</strong></p>
+			  				Ahora que tienes Git en tu sistema, querrás hacer algunas cosas para personalizar tu entorno de Git. Sólo es necesario hacer estas cosas una vez; se mantendrán entre actualizaciones. También puedes cambiarlas en cualquier momento volviendo a ejecutar los comandos correspondientes.
+							<br/><br/>
+			  				Git trae una herramienta llamada <strong><i>git config</i></strong> que te permite obtener y establecer variables de configuración, que controlan el aspecto y funcionamiento de Git. Estas variables pueden almacenarse en tres sitios distintos:
 			  			</span>
 			  		</div>
 
@@ -123,6 +126,66 @@
 	  		</div>
 	  	</div>
 	  	<br/><br/>
+	
+		<!-- extra text -->
+	  	<div class="container text-extra">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<span>
+						Configurando Git por primera vez
+						Ahora que tienes Git en tu sistema, querrás hacer algunas cosas para personalizar tu entorno de Git. Sólo es necesario hacer estas cosas una vez; se mantendrán entre actualizaciones. También puedes cambiarlas en cualquier momento volviendo a ejecutar los comandos correspondientes.
+						<br/><br/>
+						Git trae una herramienta llamada git config que te permite obtener y establecer variables de configuración, que controlan el aspecto y funcionamiento de Git. Estas variables pueden almacenarse en tres sitios distintos:
+						<br/><br/>
+						Archivo /etc/gitconfig: Contiene valores para todos los usuarios del sistema y todos sus repositorios. Si pasas la opción --system a git config, lee y escribe específicamente en este archivo.
+						Archivo ~/.gitconfig file: Específico a tu usuario. Puedes hacer que Git lea y escriba específicamente en este archivo pasando la opción --global.
+						Archivo config en el directorio de Git (es decir, .git/config) del repositorio que estés utilizando actualmente: Específico a ese repositorio. Cada nivel sobrescribe los valores del nivel anterior, por lo que los valores de .git/config tienen preferencia sobre los de /etc/gitconfig.
+						En sistemas Windows, Git busca el archivo .gitconfig en el directorio $HOME (%USERPROFILE% in Windows’ environment), que es C:\Documents and Settings\$USER para la mayoría de usuarios, dependiendo de la versión ($USER es %USERNAME% en el entorno Windows). También busca en el directorio /etc/gitconfig, aunque esta ruta es relativa a la raíz MSys, que es donde quiera que decidieses instalar Git en tu sistema Windows cuando ejecutaste el instalador.
+						<br/><br/>
+						Tu identidad
+						Lo primero que deberías hacer cuando instalas Git es establecer tu nombre de usuario y dirección de correo electrónico. Esto es importante porque las confirmaciones de cambios (commits) en Git usan esta información, y es introducida de manera inmutable en los commits que envías:
+						<br/><br/>
+						$ git config --global user.name "John Doe"
+						$ git config --global user.email johndoe@example.com
+						De nuevo, sólo necesitas hacer esto una vez si especificas la opción --global, ya que Git siempre usará esta información para todo lo que hagas en ese sistema. Si quieres sobrescribir esta información con otro nombre o dirección de correo para proyectos específicos, puedes ejecutar el comando sin la opción --global cuando estés en ese proyecto.
+						<br/><br/>
+						Tu editor
+						Ahora que tu identidad está configurada, puedes elegir el editor de texto por defecto que se utilizará cuando Git necesite que introduzcas un mensaje. Si no indicas nada, Git usa el editor por defecto de tu sistema, que generalmente es Vi o Vim. Si quieres usar otro editor de texto, como Emacs, puedes hacer lo siguiente:
+						<br/><br/>
+						$ git config --global core.editor emacs
+						Tu herramienta de diferencias
+						Otra opción útil que puede que quieras configurar es la herramienta de diferencias por defecto, usada para resolver conflictos de unión (merge). Digamos que quieres usar vimdiff:
+						<br/><br/>
+						$ git config --global merge.tool vimdiff
+						Git acepta kdiff3, tkdiff, meld, xxdiff, emerge, vimdiff, gvimdiff, ecmerge, y opendiff como herramientas válidas. También puedes configurar la herramienta que tú quieras; véase el Capítulo 7 para más información sobre cómo hacerlo.
+						<br/><br/>
+						Comprobando tu configuración
+						Si quieres comprobar tu configuración, puedes usar el comando git config --list para listar todas las propiedades que Git ha configurado:
+						<br/><br/>
+						$ git config --list
+						user.name=Scott Chacon
+						user.email=schacon@gmail.com
+						color.status=auto
+						color.branch=auto
+						color.interactive=auto
+						color.diff=auto
+						...
+						<br/><br/>
+						Puede que veas claves repetidas, porque Git lee la misma clave de distintos archivos (/etc/gitconfig y ~/.gitconfig, por ejemplo). En ese caso, Git usa el último valor para cada clave única que ve.
+						<br/><br/>
+						También puedes comprobar qué valor cree Git que tiene una clave específica ejecutando git config {clave}:
+						<br/><br/>
+						$ git config user.name
+						Scott Chacon
+					</span>
+					<br/><br/>
+
+					<h5>Extraido de: https://git-scm.com/book/es/v1/Empezando-Configurando-Git-por-primera-vez</h5>
+				</div>
+			</div>
+	  	</div>
+	  	<br/><br/><br/>
 
 	  	<!-- pre-footer -->
   		<div class="container-full preFooter">

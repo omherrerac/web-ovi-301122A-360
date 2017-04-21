@@ -44,7 +44,7 @@
 	    				<nav class="navbar navbar-default">
 		    				<div class="container-fluid">
 		    					<div class="logo">
-				  					<a href="./"><img src="assets/images/general/unad.png" alt="Unad Universidad Nacional Abierta y a Distancia"></a>
+				  					<a href="index.html"><img src="assets/images/general/unad.png" alt="Unad Universidad Nacional Abierta y a Distancia"></a>
 				  				</div>
 
 		    				    <!-- Brand and toggle get grouped for better mobile display -->
@@ -92,12 +92,12 @@
   				<!-- slider -->
   				<div class="col-md-12 sliderHome">
   					<div id="sliderHome">
-  					    <a href="manejo-basico-del-entorno.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner1.jpg');"></div></a>
-  					    <a href="conocimiento-general-de-git.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner2.jpg');"></div></a>
-  					    <a href="herramientas-html5-y-css3.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner3.jpg');"></div></a>
-  					    <a href="desarrollo-web.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner4.jpg');"></div></a>
-  					    <a href="sitios-de-interes.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner5.jpg');"></div></a>
-  					    <a href="multimedia.html"><div class="sldrHomImg" style="background:url('assets/images/banner/home/banner6.jpg');"></div></a>
+  					    <a href="manejo-basico-del-entorno.html" title="Manejo básico del entorno GIT"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner1.jpg');"></div></a>
+  					    <a href="conocimiento-general-de-git.html" title="Conocimiento general de GIT"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner2.jpg');"></div></a>
+  					    <a href="herramientas-html5-y-css3.html" title="Herramientas HTML5 y CSS3"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner3.jpg');"></div></a>
+  					    <a href="desarrollo-web.html" title="Desarrollo web"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner4.jpg');"></div></a>
+  					    <a href="sitios-de-interes.html" title="Sitios de interés"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner5.jpg');"></div></a>
+  					    <a href="multimedia.html" title="Multimedia"><div class="sldrHomImg small" style="background:url('assets/images/banner/home/banner6.jpg');"></div></a>
 	  				</div>
   				</div>
   			</div>
@@ -111,7 +111,15 @@
 			  			<h1>Conocimiento general de GIT</h1>
 			  			<br/>
 			  			<span>
-			  				
+			  				En este apartado veremos cómo se usa git de forma básica para trabajar en modo monousuario y con un repositorio centralizado.
+			  				<br/><br/>
+							<ul>
+				  				<li>Instalar Git</li>
+				  				<li>Crear un repositorio</li>
+				  				<li>Mantener un control de cambios sobre nuestros archivos</li>
+				  				<li>Sincronizar dos o más repositorios</li>
+				  				<li>Tareas básicas de git</li>
+			  				</ul>
 			  			</span>
 			  		</div>
 
@@ -123,6 +131,83 @@
 	  		</div>
 	  	</div>
 	  	<br/><br/>
+
+	  	<!-- extra text -->
+	  	<div class="container text-extra">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<span>
+						<p>Instalar git</p>
+						<br/><br/>
+						git es software libre y se puede instalar en cualquier sistema operativo. A continuación los más populares, empezando por el que aconsejamos para desarrollar software en general, Linux.
+						<br/><br/>
+						###En Linux
+						<br/><br/>	
+						Instalar git en Linux es tan simple como usar tu gestor de paquetes favorito. Por ejemplo (recuerda que normalmente necesitarás privilegios de root para instalar cualquier programa):
+						<br/><br/>
+						####En Arch Linux # pacman -S git
+						<br/><br/>
+						####En sistemas Debian, Ubuntu, Mint... # apt-get install git
+						<br/><br/>
+						####En Gentoo # emerge --ask --verbose dev-vcs/git
+						<br/><br/>
+						####En sistemas Red Hat, Fedora: # yum install git
+						<br/><br/>
+						En Windows
+						<br/><br/>
+						Para instalar git en Windows debemos descargar el programa instalador en su web oficial en http://git-scm.com/downloads.
+						<br/><br/>
+						Una vez descargado, sólo tenemos que ejecutarlo y se abrirá una ventana que nos irá solicitando paso a paso los datos necesarios para la instalación. Pulsaremos el botón "Next" para comenzar.
+						<br/><br/>
+						Instalación de git en Windows (1)
+						<br/><br/>
+						Nos pasará a la página de licencia (es una licencia libre que permite copiar, modificar y distribuir el programa).
+						<br/><br/>
+						Instalación de git en Windows (2)
+						<br/><br/>
+						La siguiente es una ventana que nos permite elegir el lugar de instalación. Si no tenemos especial interés en que sea otro, el que viene por defecto está bien.
+						<br/><br/>
+						Instalación de git en Windows (3)
+						<br/><br/>
+						En la siguiente, podemos elegir una serie de cosas como el que aparezcan iconos de git en Inicio Rápido y el Escritorio o tener dos nuevas órdenes en el menú contextual (el que aparece al hacer clic derecho con el ratón en una ventana) para iniciar una ventana de git en esa carpeta.
+						<br/><br/>
+						Instalación de git en Windows (4)
+						<br/><br/>
+						En la siguiente ventana se nos permite cambiar el nombre del grupo de programas que aparecerá en el menú Inicio.
+						<br/><br/>
+						Instalación de git en Windows (5)
+						<br/><br/>
+						Las siguientes dos opciones configuran aspectos avanzados de 'git', concretamente el uso del prompt y el manejo de retornos de carro. Para un usuario novel son adecuadas las opciones por defecto.
+						<br/><br/>
+						Instalación de git en Windows (6)
+						<br/><br/>
+						Instalación de git en Windows (7)
+						<br/><br/>
+						Y, por fin, hemos finalizado nuestra instalación.
+						<br/><br/>
+						Instalación de git en Windows (8)
+						<br/><br/>
+						A partir de este momento podemos ir al menú inicio como se indica en la imagen, y ejecutar "Git Bash", lo que abrirá una consola donde podremos interactuar con 'git' tal como se ve en este curso.
+						<br/><br/>
+						Instalación de git en Windows (9)
+						<br/><br/>
+						Instalación de git en Windows (10)
+						<br/><br/>
+						(Al terminar todos estos pasos, y como se ven en la imagen, también se instalará una versión gráfica "Git GUI", pero en este curso se seguirá la interfaz de línea de comandos)
+						<br/><br/>
+						Los autores de este libro no somos partidarios del uso de Windows para desarrollo de software. Pero, si tienes que hacerlo porque no te queda otro remedio o porque te gusta, otra alternativa es usar git for Windows o msysgit, un entorno completo que incluye un intérprete de órdenes y un entorno gráfico para trabajar desde él.
+						##Clientes GUI para Linux, Windows y Mac
+						<br/><br/>
+						En este curso se seguirá la interfaz de línea de comandos (o línea de órdenes), pero existen varias aplicaciones para diversos sistemas operativos que permiten interactuar gráficamente (Interfaz GUI) con git de forma más o menos completa.
+					</span>
+					<br/><br/>
+
+					<h5>Extraido de: https://github.com/oslugr/curso-git/blob/master/texto/uso_basico.md</h5>
+				</div>
+			</div>
+	  	</div>
+	  	<br/><br/><br/>
 
 	  	<!-- pre-footer -->
   		<div class="container-full preFooter">
