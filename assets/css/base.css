@@ -31,6 +31,7 @@ input[type=checkbox]{width: 18px; height: 18px;}
 #sliderHome .sldrHomImg{width:100%; height:490px; background-position:center!important; background-repeat:no-repeat!important; background-size: cover!important;
   -webkit-background-size: cover!important; -moz-background-size: cover!important; -o-background-size: cover!important;
 }
+#sliderHome .sldrHomImg.small{height:300px;}
 
 .sliderHome img:hover{opacity: 1;}
 /*#sliderHome{left: -45px;}*/
@@ -82,6 +83,12 @@ footer .col-md-2 a{}
 footer .col-md-2 a:hover{opacity: 0.8;}
 
 .bgGray100{display: block; width: 100%; background:#E6E6E7; padding: 30px 0 40px 0;}
+
+strong{font-weight: bold!important; font-family: arial;}
+
+.text-extra{display: block; padding:0; text-align: justify;}
+.text-extra h5{font-size: 12px; color: #7E7E7E; font-style: italic;}
+.text-extra iframe{display: block; width: 100%; height: 300px; border:0;}
 
 
 
